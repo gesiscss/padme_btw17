@@ -9,4 +9,4 @@ This repository provides ...
 You can execute the project online at [GESIS Notebooks](https://notebooks.gesis.org/)
 
 + To launch the analysis for one-time usage click  
-[![Binder](https://notebooks.gesis.org/binder/badge.svg)](https://notebooks.gesis.org/binder/v2/gh/gesiscss/gesiscss/padme_btw17/MAIN?urlpath=twitter_analysis.ipynb)
+[![Binder](https://notebooks.gesis.org/binder/badge.svg)](https://notebooks.gesis.org/binder/v2/gh/gesiscss/padme_btw17/HEAD?urlpath=twitter_analysis.ipynb)
