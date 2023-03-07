@@ -7,6 +7,5 @@ dependencies:
   - r-mongolite=2.7.1
   - r-tidyverse=2.0.0
   - r-lubridate=1.9.2
-  - r-quanteda=3.2.4
 
     
