@@ -1,0 +1,12 @@
+name: 
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.2.2
+  - r-mongolite=2.7.1
+  - r-tidyverse=2.0.0
+  - r-lubridate=1.9.2
+  - r-quanteda=3.2.4
+
+    
