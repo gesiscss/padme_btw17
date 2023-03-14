@@ -5,9 +5,9 @@ This repository provides a schema analysis of tweets by and to German political 
 
 ## Included Materials
 1. Twitter Sentiment Analysis ([notebook](twitter_analysis.ipynb))
-2.a) Sample sentiment data per hour ([CSV file](data/sentiment_data_hour.csv))
-2.b) Sample sentiment data per minute ([CSV file](data/sentiment_data_minute.csv))
-3. Further dictionary data in "data/SentiWS*"
+2. Sample sentiment data per hour ([CSV file](data/sentiment_data_hour.csv))
+3. Sample sentiment data per minute ([CSV file](data/sentiment_data_minute.csv))
+4. Further dictionary data in "data/SentiWS*"
 
 
 ## Online Analysis Environment
