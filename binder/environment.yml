@@ -8,5 +8,6 @@ dependencies:
   - r-tidyverse=2.0.0
   - r-lubridate=1.9.2
   - r-plotly=4.10.0
+  - r-quanteda=3.2.4
 
     
