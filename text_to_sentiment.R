@@ -1,3 +1,8 @@
+# Description: Script to extract sentiment score from text vector
+# Author: Mio Hienstorfer-Heitmann
+# Date: March 17, 2023
+
+
 text_to_sentiment <- function(text){
   require(stringr)
   
@@ -23,10 +28,12 @@ text_to_sentiment <- function(text){
   }
   ## load sentiment dictionary
   if(!("SentiWS_v2.0_Positive.txt" %in% list.files("data"))){
+      message("loading and unzipping sentiment dictionary")
     download.file("https://downloads.wortschatz-leipzig.de/etc/SentiWS/SentiWS_v2.0.zip", destfile = "data/SentiWS_v2.0.zip")
     setwd("data")
     unzip("SentiWS_v2.0.zip", overwrite = FALSE)
     setwd("..")
+    message("loading and unzipping succesful")
   }
   neg_dic <- read.table("data/SentiWS_v2.0_Negative.txt", header = FALSE, sep = "\t") 
   pos_dic <- read.table("data/SentiWS_v2.0_Positive.txt", header = FALSE, sep ="\t")
@@ -35,7 +42,7 @@ text_to_sentiment <- function(text){
   # remember that some cells in V3 may be empty than you have to extract the word from V1
   dic_data <- data.frame(words = character(),
                          score = numeric())
-  for(row in 1:nrow(neg_dic)){
+  for(row in 1:nrow(dic)){
     # 1. move word stem to V3
     word_v1 <- str_extract(dic[row, "V1"], ".+?(?=\\W)")
     dic[row,"V3"] <- str_c(word_v1, neg_dic[row,"V3"], sep = ",")
@@ -50,7 +57,7 @@ text_to_sentiment <- function(text){
   sentiment_score <- 0
   tokens_vec <- unlist(tokens)
   for (token in tokens_vec){
-    # sum the sentiment score for all the tokens in my list stuff gedöns.
+    # sum the sentiment score for all the tokens in my list.
     if(!(token %in% dic_data[, "words"])){
       score <- 0
     } else {
