@@ -1,6 +1,6 @@
 # PADME: Online reproducibility using PADME and GESIS Notebooks
 
-This repository provides a schema analysis of tweets by and to German political accounts during the last hours of the German federal election 2017. Its purpose is to demonstrate how an online reproducibility service such as [GESIS Notebooks](https://notebooks.gesis.org/) provides a schematic analysis that researchers can submit to [PADME](https://padme-analytics.de/ŧ) to perform the same analysis with private data.
+This repository provides a schema analysis of tweets by and to German political accounts during the last hours of the German federal election 2017. Its purpose is to demonstrate how an online reproducibility service such as [GESIS Notebooks](https://notebooks.gesis.org/) provides a schematic analysis that researchers can submit to the analytics and machine learning platform [PADME](https://padme-analytics.de/ŧ) to perform the same analysis with private data.
 
 
 ## Included Materials
