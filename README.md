@@ -1,5 +1,9 @@
 # PADME: Online reproducibility using PADME and GESIS Notebooks
 
+## Demonstrator code for the Paper
+PADME-SoSci: A Platform for Analytics and Distributed Machine Learning for the Social Sciences, by Zeyd Boukhers, Arnim Bleier, Yeliz Ucer Yediel, Mio Hienstorfer-Heitmann, Mehrshad Jaberansary, Adamantios Koumpis, and Oya Beyan.
+https://arxiv.org/abs/2303.18200
+
 This repository provides a schema analysis of tweets by and to German political accounts during the last hours of the German federal election 2017. Its purpose is to demonstrate how an online reproducibility service such as [GESIS Notebooks](https://notebooks.gesis.org/) provides a schematic analysis that researchers can submit to the analytics and machine learning platform [PADME](https://padme-analytics.de/ŧ) to perform the same analysis with private data.
 
 
